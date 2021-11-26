@@ -1,0 +1,7 @@
+courierPostTest.class
+ordersNumberGetTest.class
+ordersPutTest.class
+ordersGetTest.class
+ordersPostTest.class
+courierDeleteTest.class
+loginPostTest.class

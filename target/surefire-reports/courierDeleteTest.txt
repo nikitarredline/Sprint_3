@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: courierDeleteTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.707 s <<< FAILURE! - in courierDeleteTest
+deleteCourierIncorrectIdTest(courierDeleteTest)  Time elapsed: 2.995 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: Курьера с таким id нет
+  Actual: Курьера с таким id нет.
+
+	at courierDeleteTest.deleteCourierIncorrectIdTest(courierDeleteTest.java:69)
+
+deleteCourierWithoutIdTest(courierDeleteTest)  Time elapsed: 0.214 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path message doesn't match.
+Expected: Недостаточно данных для удаления курьера
+  Actual: Not Found.
+
+	at courierDeleteTest.deleteCourierWithoutIdTest(courierDeleteTest.java:53)
+
