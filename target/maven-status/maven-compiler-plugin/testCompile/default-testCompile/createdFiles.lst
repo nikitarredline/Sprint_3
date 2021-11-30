@@ -1,7 +1,8 @@
-courierPostTest.class
-ordersNumberGetTest.class
-ordersPutTest.class
-ordersGetTest.class
-ordersPostTest.class
-courierDeleteTest.class
-loginPostTest.class
+CourierDeleteTests.class
+СourierPostTests.class
+OrdersPutTests.class
+OrdersNumberGetTests.class
+scooterRegisterCourier.class
+OrdersPostTests.class
+LoginPostTests.class
+OrdersGetTests.class
