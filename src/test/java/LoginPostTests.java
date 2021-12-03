@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 public class LoginPostTests {
-    scooterRegisterCourier registerCourier = new scooterRegisterCourier();
+    ScooterRegisterCourier registerCourier = new ScooterRegisterCourier();
     ArrayList<String> loginPass = registerCourier.registerNewCourierAndReturnLoginPassword();
     private final String courierLogin = RandomStringUtils.randomAlphabetic(10);
     private final String courierPassword = RandomStringUtils.randomAlphabetic(10);

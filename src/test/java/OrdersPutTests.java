@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 public class OrdersPutTests {
-    scooterRegisterCourier registerCourier = new scooterRegisterCourier();
+    ScooterRegisterCourier registerCourier = new ScooterRegisterCourier();
     ArrayList<String> loginPass = registerCourier.registerNewCourierAndReturnLoginPassword();
 
     @Before

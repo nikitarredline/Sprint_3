@@ -54,7 +54,7 @@ public class СourierPostTests {
 
     @Test
     public void registerExistingCourierLoginTest() {
-        scooterRegisterCourier registerCourier = new scooterRegisterCourier();
+        ScooterRegisterCourier registerCourier = new ScooterRegisterCourier();
         ArrayList<String> loginPassName = registerCourier.registerNewCourierAndReturnLoginPasswordName();
         String requestBody = "{\"login\":\"" + loginPassName.get(0) + "\","
                 + "\"password\":\"" + loginPassName.get(1) + "\","

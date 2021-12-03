@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 
-public class scooterRegisterCourier {
+public class ScooterRegisterCourier {
 
     /*
     метод регистрации нового курьера
@@ -45,7 +45,9 @@ public class scooterRegisterCourier {
         if (response.statusCode() == 201) {
             loginPass.add(courierLogin);
             loginPass.add(courierPassword);
-        } else if (response.statusCode() != 201) {
+        } else if (response.statusCode() == 400 | response.statusCode() == 409) {
+            System.out.println((String) response.body().path("message"));
+        } else {
             System.out.print("Не работает регистрация курьера");
         }
 
@@ -77,10 +79,11 @@ public class scooterRegisterCourier {
             loginPassName.add(courierLogin);
             loginPassName.add(courierPassword);
             loginPassName.add(courierFirstName);
-        } else if (response.statusCode() != 201) {
+        } else if (response.statusCode() == 400 | response.statusCode() == 409) {
+            System.out.println((String) response.body().path("message"));
+        } else {
             System.out.print("Не работает регистрация курьера");
         }
-
         return loginPassName;
 
     }
